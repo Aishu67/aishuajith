@@ -1,6 +1,6 @@
 n=int(input())
 if n<0:
-  print("Invalid")
+  print("invalid")
  
 else:
   if n%2==0:
