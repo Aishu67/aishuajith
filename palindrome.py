@@ -1,6 +1,6 @@
 num=input()
 revnum=num[::-1]
 if num==revnum:
-   print("Yes")
+   print("yes")
 else:
-   print("No")
+   print("no")
