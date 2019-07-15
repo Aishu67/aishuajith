@@ -5,11 +5,11 @@ for i in range(n):
   sarr.append(v)
 mval=min(sarr,key=len)
 sarr.remove(mval)
-for i in range(len(sarr)):
-  for j in range(len(mval)):
-     cval=sarr[i]
-     if mval[:j+1]==cval[:j+1]:
-       res=mval[:j+1]
+for i in range(len(mval)):
+  for j in range(len(sarr)):
+     cval=sarr[j]
+     if mval[:i+1]==cval[:i+1]:
+       res=mval[:i+1]
      else:
        break
 print(res)
