@@ -13,4 +13,3 @@ for i in range(len(sarr)):
      else:
        break
 print(res)
-  
