@@ -1,0 +1,6 @@
+val=list(map(int,input().split()))
+val2=list(map(int,input().split()))
+hr=abs(val[0]-val2[0])
+m=abs(val[1]-val2[1])
+print(hr,end=" ")
+print(m)
