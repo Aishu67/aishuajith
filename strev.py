@@ -1,2 +1,2 @@
-s=input()
-print(s[::-1])
+sval=input()
+print(sval[::-1])
