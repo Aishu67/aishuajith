@@ -1,11 +1,12 @@
 import java.util.*;
-public class Camelcase{
+public class Main{
     public static void main(String arg[]){
         
         String s;
         int i;
         Scanner sc=new Scanner(System.in);
         s=sc.nextLine();
+        s=s.toLowerCase();
         
         char[] arr=s.toCharArray();
         arr[0]=Character.toUpperCase(arr[0]);
