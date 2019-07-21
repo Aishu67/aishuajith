@@ -5,19 +5,20 @@ public class Main{
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
         l=sc.nextInt();
-        for(i=n;i<l;i++){
+        for(i=n;i<=l;i++){
             p=0;
-            if(i==1 || i==0 || i==2){
+            if(i==2){
                 p=1;
             }
             else{
             for(j=2;j<i;j++){
                 if(i%j==0){
+                    p=0;
                     break;
                 }
                 else{
                     p=1;
-                      System.out.println(i);
+                     
                 }
             }
          }
