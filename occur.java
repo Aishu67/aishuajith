@@ -8,8 +8,7 @@ public class Main{
         for(i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        //ArrayList<Integer> al=new ArrayList<Integer>();
-        StringBuilder sb=new  StringBuilder();
+        ArrayList<Integer> al=new ArrayList<Integer>();
     
        HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
        for(Integer en:arr){
@@ -20,20 +19,14 @@ public class Main{
         tm.putAll(hm);
         for(Map.Entry<Integer,Integer> res:tm.entrySet()){
             if(res.getValue()>1){
-                sb.append(res.getKey());
-               // System.out.println(res.getKey()+" ");
+             
+               al.add(res.getKey());
+              
             }
         }
-       //for(Map.Entry<Integer,Integer> val:hm.entrySet()){
-          // if(val.getValue()>1){
-               
-           //System.out.println(val.getKey()+" "+val.getValue());
-         //  System.out.println()
-         //  }
-         //String resval=String.join(" ",sb);
-         String resval=sb.toString();
-         
-        System.out.println(resval);
+        for(Integer p:al){
+            System.out.print(p+" "); 
+        }
        }
         
     }
