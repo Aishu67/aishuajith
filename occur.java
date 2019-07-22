@@ -1,6 +1,8 @@
 import java.util.*;
 public class Main{
+    public static int u=0;
     public static void main(String args[]){
+        
         Scanner sc=new Scanner(System.in);
         int i;
         int n=sc.nextInt();
@@ -19,13 +21,19 @@ public class Main{
         tm.putAll(hm);
         for(Map.Entry<Integer,Integer> res:tm.entrySet()){
             if(res.getValue()>1){
+                u=1;
              
                al.add(res.getKey());
               
             }
         }
+        if(u==1){
         for(Integer p:al){
             System.out.print(p+" "); 
+        }
+        }
+        else{
+          System.out.println("unique");
         }
        }
         
