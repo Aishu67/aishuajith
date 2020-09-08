@@ -8,7 +8,7 @@ public class Main{
         if(s==null ||s.isEmpty()){
             System.out.println("NULL");
         }
-        String[] words=s.split("\\s+");
+        String[] words=s.split("\\s+");//Regular Expression Method
         System.out.println(words.length);
         //for(String i:words){
            // System.out.println(i);
